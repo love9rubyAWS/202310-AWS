@@ -1,0 +1,25 @@
+https://www.ktexperts.com/create-ebs-volume-snapshot-and-attached-to-another-ec2-instance-in-aws/
+
+
+找這
+Connect to Second Linux EC2 Instance through putty and verify files
+
+我們目前做到這
+連到新開的ec2有掛剛剛的volume的
+
+sudo su
+lsblk
+df -h
+file -s /dev/xvdf
+mkdir /ktexperts
+mount /dev/xvdf /ktexperts
+df -h
+cd /ktexperts/
+ls
+vi /etc/fstab
+mount -a
+cd /ktexperts/
+ls
+
+
+
